@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Admin Panel</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="admin-container">
+    <h1>Add New Product</h1>
+    <form id="addProductForm">
+      <input type="text" id="productName" placeholder="Product Name" required>
+      <input type="text" id="productDescription" placeholder="Product Description" required>
+      <input type="number" id="productPrice" placeholder="Price" required>
+      <button type="submit">Add Product</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 E-Shop</p>
+  </footer>
+
+  <script src="firebase-config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

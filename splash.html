@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splash Screen</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Splash screen styles */
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4;
+    }
+    .splash-container {
+      text-align: center;
+      animation: fadeOut 1s ease-out 4s forwards;
+    }
+    .splash-logo {
+      font-size: 50px;
+      font-weight: bold;
+      color: #333;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="splash-container">
+    <div class="splash-logo">E-Shop</div>
+    <p>Welcome to our store</p>
+  </div>
+
+  <script>
+    // Redirect to login page after 5 seconds
+    setTimeout(function() {
+      window.location.href = 'login.html';
+    }, 5000);
+  </script>
+</body>
+</html>
